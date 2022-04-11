@@ -1,7 +1,13 @@
+using Microsoft.AspNetCore.Mvc.Controllers;
+using HelloMVC.Custom;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews(options =>
+{
+    options.Conventions.Add(new CustomControllerModelConvention());
+});
 
 var app = builder.Build();
 
