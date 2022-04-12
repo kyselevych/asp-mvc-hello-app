@@ -11,9 +11,9 @@ namespace HelloMVC.Controllers
         }
 
         [HttpPost]
-        public ViewResult Welcome(GuestResponse guestResponse)
+        public ViewResult Welcome(PersonViewModel person)
         {
-            return View("Welcome", guestResponse);
+            return View("Welcome", person);
         }
     }
 }

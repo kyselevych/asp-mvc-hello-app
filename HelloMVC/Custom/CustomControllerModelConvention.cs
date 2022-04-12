@@ -8,9 +8,9 @@ namespace HelloMVC.Custom
         public void Apply(ControllerModel controller)
         {
             string controllerName = Tools.GetControllerName(controller.ControllerName);
-            string reversedControllerName = Tools.GetReversedString(controllerName);
+            //string reversedControllerName = Tools.GetReversedString(controllerName);
 
-            controller.ControllerName = reversedControllerName;
+            controller.ControllerName = controllerName;
 
             /*
             var firstSelector = controller.Selectors[0];

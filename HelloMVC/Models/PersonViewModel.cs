@@ -1,6 +1,6 @@
 ﻿namespace HelloMVC.Models
 {
-    public class GuestResponse
+    public class PersonViewModel
     {
         public string Name { get; set; }
     }
